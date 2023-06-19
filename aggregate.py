@@ -1,5 +1,6 @@
 import pandas as pd
 
+# aggregate all modifications for a contract
 file_path = './output1.3.xlsx'
 
 data = pd.read_excel(file_path)
