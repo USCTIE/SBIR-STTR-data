@@ -82,6 +82,13 @@ Execution speed really depends on the network condition and the number of availa
 - `socio_data`: Socio-economic data associated with the contract.
 - `description`: A brief description of the contract or award.
 
+## Aggregating Contract Modifications
+To aggregate contract modifications, you can use the provided `aggregate.py` script. The script reads data from an Excel file, performs the aggregation, and saves the results to another Excel file (`aggregate.xlsx`).
+
+To run the script, make sure you have the following dependencies installed:
+
+- pandas
+
 ## Contact
 
 For any inquiries or feedback, feel free to reach out to us:
