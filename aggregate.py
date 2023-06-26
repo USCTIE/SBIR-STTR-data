@@ -1,6 +1,5 @@
 import pandas as pd
 
-# aggregate all modifications for a contract
 file_path = './output1.3.xlsx'
 
 data = pd.read_excel(file_path)
@@ -8,6 +7,8 @@ data_copy = data.copy()
 
 data_copy['ref-idv-id'].fillna('N/A', inplace=True)
 data_copy['description'] = data_copy['description'].astype(str)
+
+data_copy.loc[data_copy['mod-number'] == '0', 'total-obligated-amount'] = data_copy['obligated-amount']
 
 grouped_data = data_copy.groupby(['award-id', 'ref-idv-id']).agg({
     'mod-number': 'count',
