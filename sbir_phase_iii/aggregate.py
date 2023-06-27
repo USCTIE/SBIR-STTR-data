@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = './output1.3.xlsx'
+file_path = 'output1.3.xlsx'
 
 data = pd.read_excel(file_path)
 data_copy = data.copy()
